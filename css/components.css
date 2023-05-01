@@ -1,0 +1,85 @@
+:root {
+    --text:#484848;
+    --primarC:#FF8541;
+    --footerBg: #EEE3D8;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+.menu__links {
+    display: flex;
+    gap: 1em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.btn {
+    border: 2px solid var(--primarC);
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    color: var(--primarC);
+    font-weight: 600;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+}
+
+.socky {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3em;
+}
+.socky__item:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.socky__item {
+    transition: 0.1s;
+}
+
+section {
+    margin: 0 2em;
+}
+
+.nabidka__item {
+    position: relative;
+    margin: 0;
+}
+.item__text {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    width: max-content;
+}
+
+footer {
+    background-color: var(--footerBg);
+    padding: 1em;
+}
+.Finfo {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__paticka {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--text);
+}
+.paticka__wrapper {
+    display: flex;
+    gap: 10px;
+}
+.footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
