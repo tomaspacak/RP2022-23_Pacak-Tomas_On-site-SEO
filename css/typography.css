@@ -1,6 +1,7 @@
 :root {
     --text:#484848;
     --primarC:#FF8541;
+    --wh:rgb(255, 255, 255);
 }
 
 a {
@@ -18,17 +19,36 @@ h1, h2, h3 {
     text-align: center;
     color: var(--primarC);
 }
-.h1-hp {
+.h1-hp { /*krit*/
     text-align: left;
     font-weight: 700;
     font-size: 32px;
+    margin: 0;
+    color: var(--wh);
 }
 h4 {
     margin: 0;
+}
+
+.menu_link a {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--wh);
+}
+
+.uvod__slogan {   /*krit*/
+    color: var(--wh);
+    margin: 0;
+    margin-top: 0.2em;
 }
 
 
 
 footer p {
     font-size: 14px;
+}
+.Finfo__title {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
 }

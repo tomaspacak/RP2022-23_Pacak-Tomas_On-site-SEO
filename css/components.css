@@ -2,6 +2,7 @@
     --text:#484848;
     --primarC:#FF8541;
     --footerBg: #EEE3D8;
+    --wh:rgb(255, 255, 255);
 }
 
 
@@ -11,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
+    background-color: var(--primarC);
 }
 .menu__links {
     display: flex;
@@ -18,13 +20,45 @@
     text-decoration: none;
     list-style-type: none;
 }
+.menu_link:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+.menu__link {
+    transition: .2s;
+}
 
 .btn {
+    display: inline-block;
     border: 2px solid var(--primarC);
     border-radius: 2em;
     padding: 0.5em 1em;
     color: var(--primarC);
     font-weight: 600;
+}
+.btn--uvod {
+    color: var(--wh);
+    border: 2px solid var(--wh);
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+}
+.btn--c {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.btn--f {
+    color: var(--wh);
+    border: 2px solid var(--wh);
+}
+.btn:hover {
+    background-color: var(--primarC);
+    color: var(--wh);
+}
+.btn--f:hover {
+    color: var(--primarC);
+    background-color: var(--wh);
 }
 
 .img-responsive {
@@ -46,20 +80,57 @@
     transition: 0.1s;
 }
 
-section {
+main, section {
     margin: 0 2em;
+    margin-bottom: 1em;
+}
+
+.uvod {
+    background-image: url(../img/masaz_liberec.webp); /*krit*/
+    background-size: cover;
+    padding-top: 1em;
+    position: relative;
+}
+.uvod__text {
+    margin-left: 1em;
+    margin-top: 2em;
 }
 
 .nabidka__item {
+    display: block;
     position: relative;
     margin: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    max-width: 500px;
 }
 .item__text {
     position: absolute;
-    bottom: 0;
-    padding: 1em;
+    bottom: 1em;
+    left: 1em;
     width: max-content;
+    color: var(--wh);
+    font-size: 22px;
+    transition: .1s;
+    padding: 0;
 }
+figure {
+    margin: 0;
+}
+.nabidka__item:hover .item__text {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    transition: .3s;
+}
+.nabidka__item .item__image:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.item__image {
+    transition: 1s;
+}
+
 
 footer {
     background-color: var(--footerBg);
@@ -68,6 +139,30 @@ footer {
 .Finfo {
     display: flex;
     justify-content: space-between;
+}
+.Finfo__text {
+    display: flex;
+    align-items: center;
+}
+.Finfo__text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icon_mail.svg);
+    background-repeat: no-repeat;
+    margin-right: 0.3em;
+    background-position-y: 2px;
+}
+.Finfo__text--phone::before {
+    background-image: url(../img/icon_phone.svg);
+    background-position-y: 0;
+}
+.Finfo__text--adres::before {
+    background-image: url(../img/icon_adres.svg);
+    width: 15px;
+    height: 19px;
+    background-position-y: 0;
 }
 .footer__paticka {
     display: flex;

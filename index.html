@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dotek Pohody</title>
+    <link rel="icon" type="image/png" href="./img/logo_menu.svg">
     <meta name="description" content="Rádi Vám nabídneme jedinečný zážitek z masáže, která uvolní vaše tělo i mysl. Jsme tým zkušených masérů v Liberci, kteří Vám nabízí klasickou masáž, antistresovou masáž a další masáže s přírodními oleji. Uvolněte se s Dotekem Pohody.">
     <meta name="keywords" content="klíčové slovo 1, klíčové slovo 2, klíčové slovo 3">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Tomáš Pacák">
     <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,19 +24,19 @@
         <nav class="menu">
             <a href="./index.html"><img src="./img/logo_menu.svg" alt="Logo"></a>
             <ul class="menu__links">
-              <li><a href="#">Domů</a></li>
-              <li><a href="#">O nás</a></li>
-              <li><a href="#">Kontakt</a></li>
+              <li class="menu_link"><a href="./index.html">Domů</a></li>
+              <li class="menu_link"><a href="#">O nás</a></li>
+              <li class="menu_link"><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
-        <div>
+    <div class="uvod">
+        <div class="uvod__text">
             <h1 class="h1-hp">Dotek Pohody</h1>
-            <p>Nechte uvolnit tělo i mysl</p>
+            <p class="uvod__slogan">Nechte uvolnit tělo i mysl</p>
         </div>
-        <a class="btn" href="">Objednat se</a>
+        <a class="btn btn--uvod btn--f" href="mailto:DotekPohody@gmail.com">Objednat se</a>
         <div class="socky">
             <a class="socky__item" href="#"><img src="./img/Facebook_icon.svg" alt="ikona sociální sítě Facebook"></a>
             <a class="socky__item" href="#"><img src="./img/Instagram_icon.svg" alt="ikona sociální sítě Instagram"></a>
@@ -50,61 +52,66 @@
     <main>
         <h2>Nabídka masáží</h2>
         <div class="nabidka">
-            <a href="#" class="nabidka__item">
-                <figure>
-                    <img src="./img/masaz_nohou.png" class="item__image img-responsive" alt="Masáž nohou od Doteku Pohody v Liberci">
-                    <figcaption class="item__text">
-                        <h4>Masáž nohou</h4>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="#" class="nabidka__item">
-                <figure>
-                    <img src="./img/masaz_nohou.png" class="item__image img-responsive" alt="Antistresová masáž od Doteku Pohody v Liberci">
-                    <figcaption class="item__text">
-                        <h4>Antistresová masáž</h4>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="#" class="nabidka__item">
-                <figure>
-                    <img src="./img/masaz_nohou.png" class="item__image img-responsive" alt="Baňková masáž od Doteku Pohody v Liberci">
-                    <figcaption class="item__text">
-                        <h4>Baňková masáž</h4>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="#" class="nabidka__item">
-                <figure>
-                    <img src="./img/masaz_nohou.png" class="item__image img-responsive" alt="Klasická masáž od Doteku Pohody v Liberci">
-                    <figcaption class="item__text">
-                        <h4>Klasická masáž</h4>
-                    </figcaption>
-                </figure>
-            </a>
+            <div class="nabidka__wraper">
+                <a href="#" class="nabidka__item">
+                    <figure>
+                        <img src="./img/masaz_nohou.webp" class="item__image img-responsive" alt="Masáž nohou od Doteku Pohody v Liberci">
+                        <figcaption class="item__text">
+                            <h4>Masáž nohou</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="nabidka__item">
+                    <figure>
+                        <img src="./img/antistresova_masaz.webp" class="item__image img-responsive" alt="Antistresová masáž od Doteku Pohody v Liberci">
+                        <figcaption class="item__text">
+                            <h4>Antistresová masáž</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="nabidka__wraper">
+                <a href="#" class="nabidka__item">
+                    <figure>
+                        <img src="./img/bankova_masaz.webp" class="item__image img-responsive" alt="Baňková masáž od Doteku Pohody v Liberci">
+                        <figcaption class="item__text">
+                            <h4>Baňková masáž</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="nabidka__item">
+                    <figure>
+                        <img src="./img/klasicka_masaz.webp" class="item__image img-responsive" alt="Klasická masáž od Doteku Pohody v Liberci">
+                        <figcaption class="item__text">
+                            <h4>Klasická masáž</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
         </div>
+        <a class="btn btn--c" href="mailto:DotekPohody@gmail.com">Objednat se</a>
     </main>
 
     <footer>
         <div class="Finfo">
             <div>
-                <p>Dotek Pohody s.r.o.</p>
+                <p class="Finfo__title">Dotek Pohody s.r.o.</p>
                 <div>
-                    <p>DotekPohody@gmail.com</p>
-                    <p>+420 586 324 846</p>
-                    <p>Liberec, Dubská 52/1</p>
+                    <p class="Finfo__text Finfo__text--mail">DotekPohody@gmail.com</p>
+                    <p class="Finfo__text Finfo__text--phone">+420 586 324 846</p>
+                    <p class="Finfo__text Finfo__text--adres">Liberec, Dubská 52/1</p>
                 </div>
             </div>
             <div>
-                <p>Otevírací doba</p>
+                <p class="Finfo__title">Otevírací doba</p>
                 <div>
                     <p>Po - Pa:  9:00 - 20:00</p>
                     <p>So - Ne:  9:00 - 14:00</p>
-                    <a class="btn " href="#">Napište nám</a>
+                    <a class="btn btn--f" href="mailto:DotekPohody@gmail.com">Napište nám</a>
                 </div>
             </div>
         </div>
-        <img src="" alt="">
+        <img class="footer__logo" src="./img/logo_footer.svg" alt="logo Dotek Pohody">
         <div class="footer__icons">
             <a href="./index.html"><img src="./img/logo_menu.svg" alt="logo masáží v Liberci Dotek Pohody"></a>
             <div>
