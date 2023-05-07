@@ -3,6 +3,7 @@
     --primarC:#FF8541;
     --footerBg: #EEE3D8;
     --wh:rgb(255, 255, 255);
+    --zamBg: rgba(255, 137, 70, 0.72);
 }
 
 
@@ -67,10 +68,14 @@
 }
 
 .socky {
+    position: absolute;
+    right: 0.5em;
+    bottom: 1em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 0.3em;
+    
 }
 .socky__item:hover {
     transform: scale(1.1);
@@ -82,7 +87,7 @@
 
 main, section {
     margin: 0 2em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .uvod {
@@ -177,4 +182,64 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/*KONTAKT*/
+.kontakt {
+    margin-bottom: 1em;
+}
+.kontakt__otviracka {
+    margin-left: 2em;
+}
+.kontakt__otviracka::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon_time.svg);
+    background-repeat: no-repeat;
+    margin-left: -2.3em;
+    margin-bottom: -2.5em;
+}
+
+/*O NAS*/
+.card {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+.card__text {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    width: 12em;
+    background-color: var(--zamBg);
+    color: var(--wh);
+    padding: 1em;
+    
+}
+
+/*MASAZ*/
+
+.cenik {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.ucinky {
+    padding-left: 0.5em;
+    margin-top: 0;
+}
+.ucinky_ucinek {
+    list-style-position: inside;
+    list-style-image: url(../img/kriz.svg);
+    margin-bottom: 0.2em;
+}
+.cenik__cena {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-weight: 500;
 }
