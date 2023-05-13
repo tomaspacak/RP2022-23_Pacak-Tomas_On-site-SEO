@@ -205,8 +205,10 @@ footer {
 /*O NAS*/
 .card {
     position: relative;
-    max-width: 400px;
     margin-bottom: 1em;
+}
+.card__image {
+    border-bottom: solid 0.7em var(--primarC);
 }
 .card__text {
     display: block;
@@ -242,4 +244,22 @@ footer {
     margin-top: 0;
     margin-bottom: 0.3em;
     font-weight: 500;
+}
+
+/*swiper*/
+.swiper-wrapper {
+    margin-bottom: 1em;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--wh);
+}
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color,var(--primarC)) !important;
+}
+/*lg-gallery*/
+.lg-toolbar, .lg-sub-html {
+    background-color: var(--primarC);
+}
+.lg-toolbar .lg-icon, .lg-counter {
+    color: var(--wh) !important;
 }

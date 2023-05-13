@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/logo_menu.svg">
     <title>O nás | Dotek Pohody</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/dist/css/lg-thumbnail.css">
     <link rel="stylesheet" href="./css/dist/css/lightgallery.css">
     <link rel="stylesheet" href="./css/dist/css/lg-zoom.css">
@@ -37,9 +38,9 @@
     </section>
     <section>
         <h2>Na koho se můžete těšit?</h2>
-        <div class="cards">
-            <div class="cards__wrapper">
-                <figure class="card">
+        <div class="cardst swiper">
+            <div class="cards__wrappe swiper-wrapper">
+                <figure class="card swiper-slide">
                     <img class="card__image img-responsive" src="./img/zamestnanec_1.webp" alt="Fotografie zaměstnance Doteku Pohody">
                     <figcaption class="card__text">
                         <p class="card__name">Zuzka</p>
@@ -47,7 +48,7 @@
                         <p class="card__praxe">5 let praxe</p>
                     </figcaption>
                 </figure>
-                <figure class="card">
+                <figure class="card swiper-slide">
                     <img class="card__image img-responsive" src="./img/zamestnanec_2.webp" alt="Fotografie zaměstnance Doteku Pohody">
                     <figcaption class="card__text">
                         <p class="card__name">Zuzka</p>
@@ -55,9 +56,7 @@
                         <p class="card__praxe">5 let praxe</p>
                     </figcaption>
                 </figure>
-            </div>
-            <div class="cards__wrapper">
-                <figure class="card">
+                <figure class="card swiper-slide">
                     <img class="card__image img-responsive" src="./img/zamestnanec_3.webp" alt="Fotografie zaměstnance Doteku Pohody">
                     <figcaption class="card__text">
                         <p class="card__name">Zuzka</p>
@@ -65,7 +64,7 @@
                         <p class="card__praxe">5 let praxe</p>
                     </figcaption>
                 </figure>
-                <figure class="card">
+                <figure class="card swiper-slide">
                     <img class="card__image img-responsive" src="./img/zamestnanec_4.webp" alt="Fotografie zaměstnance Doteku Pohody">
                     <figcaption class="card__text">
                         <p class="card__name">Zuzka</p>
@@ -74,6 +73,9 @@
                     </figcaption>
                 </figure>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section>
@@ -157,6 +159,37 @@
             <p>Vyrobilo: P interactive</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".swiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            340: {
+            slidesPerView: 1,
+            },
+            570: {
+            slidesPerView: 2,
+            },
+            850: {
+            slidesPerView: 3,
+            },
+            1300: {
+            slidesPerView: 4,
+            },
+          },
+        });
+    </script>
+    </script>
     <script type="text/javascript">
 		lightGallery(
 			document.querySelector("section > .gallery"), {
