@@ -26,10 +26,7 @@ h1, h2, h3 {
     margin: 0;
     color: var(--wh);
 }
-h4 {
-    margin: 0;
-}
-.h2--mas {
+.h2--mas, .h3--mas {
     text-align: left;
     margin-bottom: 0.5em;
 }
@@ -46,6 +43,11 @@ h4 {
     margin-top: 0.2em;
 }
 
+.item__nadpis {
+    color: var(--wh);
+    font-size: 22px;
+    margin: 0;
+}
 
 footer p {
     font-size: 14px;

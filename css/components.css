@@ -4,6 +4,7 @@
     --footerBg: #EEE3D8;
     --wh:rgb(255, 255, 255);
     --zamBg: rgba(255, 137, 70, 0.72);
+    
 }
 
 
@@ -114,8 +115,6 @@ main, section {
     bottom: 1em;
     left: 1em;
     width: max-content;
-    color: var(--wh);
-    font-size: 22px;
     transition: .1s;
     padding: 0;
 }
