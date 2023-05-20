@@ -4,7 +4,9 @@
     --footerBg: #EEE3D8;
     --wh:rgb(255, 255, 255);
     --zamBg: rgba(255, 137, 70, 0.72);
-    
+    --swiper-theme-color: #ea7603;
+    --swiper-pagination-bullet-size: 0.6em;
+    --header: #FE9B64;
 }
 
 
@@ -14,7 +16,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
-    background-color: var(--primarC);
+    background-color: var(--header);
+}
+.menu__logo {
+    width: 2em;
 }
 .menu__links {
     display: flex;
@@ -85,6 +90,9 @@
 .socky__item {
     transition: 0.1s;
 }
+.socky__item img {
+    width: 1.8em;
+}
 
 main, section {
     margin: 0 2em;
@@ -92,7 +100,7 @@ main, section {
 }
 
 .uvod {
-    background-image: url(../img/masaz_liberec.webp); /*krit*/
+    background-image: url(../img/masaz_liberec.webp);
     background-size: cover;
     padding-top: 1em;
     position: relative;
@@ -182,6 +190,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+.footer__socky img {
+    width: 1.5em;
+}
 
 /*KONTAKT*/
 .kontakt {
@@ -253,12 +264,10 @@ footer {
     color: var(--wh);
 }
 .swiper-pagination-bullet-active {
-    background: var(--swiper-pagination-color,var(--primarC)) !important;
+    background-color: var(--primarC) !important;
 }
 /*lg-gallery*/
 .lg-toolbar, .lg-sub-html {
     background-color: var(--primarC);
 }
-.lg-toolbar .lg-icon, .lg-counter {
-    color: var(--wh) !important;
-}
+

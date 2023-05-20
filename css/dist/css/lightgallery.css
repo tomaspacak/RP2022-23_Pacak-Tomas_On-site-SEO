@@ -198,7 +198,7 @@
 }
 
 .lg-toolbar .lg-icon {
-  color: #999;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   float: right;
   font-size: 24px;
@@ -290,7 +290,7 @@
 }
 
 .lg-counter {
-  color: #999;
+  color: rgb(255, 255, 255);
   display: inline-block;
   font-size: 16px;
   padding-left: 20px;

@@ -13,12 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/logo_menu.svg">
     <title>Kontakt | Dotek Pohody</title>
+    <link rel="preload" href="./img/mapa_DT.webp" as="image">
+    <link rel="preload" href="./css/critical.css" as="style">
+    <link rel="preload" href="./css/criticalKontakt.css" as="style">
 
 </head>
 <body>
     <header>
         <nav class="menu">
-            <a href="./index.html"><img src="./img/logo_menu.svg" alt="Logo"></a>
+            <a class="menu_link" href="./index.html"><img class="menu__logo" src="./img/logo_menu.svg" alt="Logo"></a>
             <ul class="menu__links">
               <li class="menu_link"><a href="./index.html">Domů</a></li>
               <li class="menu_link"><a href="./Onas.html">O nás</a></li>
@@ -28,7 +31,7 @@
     </header>
     <section>
         <h1>Kontakt</h1>
-        <div class="kontakt">
+        <div class="kontakt btn--c">
             <div class="kontakt__wrapper">
                 <div>
                     <a class="kontak__text Finfo__text Finfo__text--mail" href="mailto:DotekPohody@gmail.com">DotekPohody@gmail.com</a>
@@ -42,12 +45,13 @@
                 <a class="btn" href="mailto:DotekPohody@gmail.com">Objednat se</a>
             </div>
             <img class="kontakt__img img-responsive" src="./img/mapa_DT.webp" alt="Poloha Doteku Pohody na mapě">
+            <div class="socky--kontakt">
+                <a class="socky__item" href="#"><img src="./img/Facebook_icon.svg" alt="ikona sociální sítě Facebook"></a>
+                <a class="socky__item" href="#"><img src="./img/Instagram_icon.svg" alt="ikona sociální sítě Instagram"></a>
+                <a class="socky__item" href="#"><img src="./img/LinkedIn_icon.svg" alt="ikona sociální sítě LinkedIn"></a>
+            </div>
         </div>
-        <div class="socky--kontakt">
-            <a class="socky__item" href="#"><img src="./img/Facebook_icon.svg" alt="ikona sociální sítě Facebook"></a>
-            <a class="socky__item" href="#"><img src="./img/Instagram_icon.svg" alt="ikona sociální sítě Instagram"></a>
-            <a class="socky__item" href="#"><img src="./img/LinkedIn_icon.svg" alt="ikona sociální sítě LinkedIn"></a>
-        </div>
+        
         
     </section>
     <footer>
@@ -71,7 +75,7 @@
         </div>
         <img class="footer__logo" src="./img/logo_footer.svg" alt="logo Dotek Pohody">
         <div class="footer__icons">
-            <a href="./index.html"><img src="./img/logo_menu.svg" alt="logo masáží v Liberci Dotek Pohody"></a>
+            <a class="menu_link" href="./index.html"><img src="./img/logo_menu.svg" alt="logo masáží v Liberci Dotek Pohody"></a>
             <div>
                 <a href="#"><img src="./img/facebook_footer.svg" alt="logo Facebooku"></a>
                 <a href="#"><img src="./img/instagram_footer.svg" alt="logo Instagramu"></a>

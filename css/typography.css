@@ -19,10 +19,12 @@ h1, h2, h3 {
     text-align: center;
     color: var(--primarC);
 }
+h1 {
+    font-size: 32px;
+}
 .h1-hp { /*krit*/
     text-align: left;
     font-weight: 700;
-    font-size: 32px;
     margin: 0;
     color: var(--wh);
 }

@@ -1,0 +1,21 @@
+.kontakt__otviracka::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon_time.svg);
+    background-repeat: no-repeat;
+    margin-left: -2.3em;
+    margin-bottom: -2.5em;
+}
+.Finfo__text--phone::before {
+    background-image: url(../img/icon_phone.svg);
+    background-position-y: 0;
+}
+.Finfo__text--adres::before {
+    background-image: url(../img/icon_adres.svg);
+    width: 15px;
+    height: 19px;
+    background-position-y: 0;
+}
+:root{--text:#484848;--primarC:#FF8541;--footerBg:#EEE3D8;--wh:rgb(255, 255, 255);--zamBg:rgba(255, 137, 70, 0.72)}.menu{display:flex;align-items:center;justify-content:space-between;padding:0 1em;background-color:var(--primarC)}.menu__links{display:flex;gap:1em;text-decoration:none;list-style-type:none}.btn{display:inline-block;border:2px solid var(--primarC);border-radius:2em;padding:.5em 1em;color:var(--primarC);font-weight:600}.btn--f{color:var(--wh);border:2px solid var(--wh)}.img-responsive{display:block;width:100%}section{margin:0 2em;margin-bottom:5em}footer{background-color:var(--footerBg);padding:1em}.Finfo{display:flex;justify-content:space-between}.Finfo__text{display:flex;align-items:center}.Finfo__text::before{content:"";display:inline-block;width:16px;height:16px;background-image:url('https://pslib-cz.github.io/RP2022-23_Pacak-Tomas_On-site-SEO/img/icon_mail.svg');background-repeat:no-repeat;margin-right:.3em;background-position-y:2px}.Finfo__text--phone::before{background-image:url('https://pslib-cz.github.io/RP2022-23_Pacak-Tomas_On-site-SEO/img/icon_phone.svg');background-position-y:0}.Finfo__text--adres::before{background-image:url('https://pslib-cz.github.io/RP2022-23_Pacak-Tomas_On-site-SEO/img/icon_adres.svg');width:15px;height:19px;background-position-y:0}.footer__paticka{display:flex;justify-content:space-between;border-top:1px solid var(--text)}.paticka__wrapper{display:flex;gap:10px}.footer__icons{display:flex;align-items:center;justify-content:space-between}.kontakt{margin-bottom:1em}.kontakt__otviracka{margin-left:2em}.kontakt__otviracka::before{content:"";display:inline-block;width:30px;height:30px;background-image:url('https://pslib-cz.github.io/RP2022-23_Pacak-Tomas_On-site-SEO/img/icon_time.svg');background-repeat:no-repeat;margin-left:-2.3em;margin-bottom:-2.5em}.footer__logo{position:relative;left:50%;transform:translate(-50%,0)}.socky--kontakt{display:flex;flex-direction:row;justify-content:flex-end;gap:.5em}.kontakt__wrapper{margin-bottom:2em}@media (min-width:600px){.footer__logo{left:50%;top:-7em}.kontakt{display:flex;justify-content:center;gap:1em}.kontakt__wrapper{flex-basis:220px}.kontakt__img{max-width:500px;flex-basis:300px;flex-grow:1}}:root{--text:#484848;--primarC:#FF8541;--wh:rgb(255, 255, 255)}a{text-decoration:none}html{font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:16px;color:var(--text)}h1{text-align:center;color:var(--primarC)}.menu_link a{font-size:17px;font-weight:700;color:var(--wh)}footer p{font-size:14px}.Finfo__title{font-size:15px;font-weight:500;text-align:center}.kontak__text{font-weight:400;font-size:16px;color:var(--text);margin-top:0;margin-bottom:.5em}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
