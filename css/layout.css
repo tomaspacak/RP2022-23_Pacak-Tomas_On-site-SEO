@@ -7,12 +7,6 @@
     transform: translate(-50%, 0);
 }
 
-.footer__logo {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
 .socky--kontakt {
     display: flex;
     flex-direction: row;
@@ -27,6 +21,12 @@
 }
 .h1-hp {
     font-size: 32px;
+}
+.Finfo::after {
+    margin-top: 10em;
+}
+.Finfo {
+    margin-bottom: 7em;
 }
 .gallery {
     display: grid;
@@ -53,9 +53,11 @@
         justify-content: center;
     }
 
-    .footer__logo {
-        left: 50%;
-        top: -7em;
+    .Finfo::after {
+        margin-top: 2em;
+    }
+    .Finfo {
+        margin-bottom: 2em;
     }
 
     .kontakt {

@@ -82,7 +82,26 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 0.3em;
-    
+}
+.socky__item::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url(../img/Facebook_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.socky__item--ig::before {
+    background-image: url(../img/Instagram_icon.svg);
+}
+.socky__item--li::before {
+    background-image: url(../img/LinkedIn_icon.svg);
+}
+.socky__text {
+    position: absolute;
+    text-indent: 500em;
+    right: 500em;
 }
 .socky__item:hover {
     transform: scale(1.1);
@@ -90,9 +109,6 @@
 }
 .socky__item {
     transition: 0.1s;
-}
-.socky__item img {
-    width: 1.8em;
 }
 
 main, section {
@@ -156,6 +172,8 @@ footer {
 .Finfo__text {
     display: flex;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 .Finfo__text::before {
     content: "";
@@ -176,6 +194,17 @@ footer {
     width: 15px;
     height: 19px;
     background-position-y: 0;
+}
+.Finfo::after {
+    content: "";
+    display: inline-block;
+    width: 101px;
+    height: 80px;
+    background-image: url(../img/logo_footer.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .footer__paticka {
     display: flex;

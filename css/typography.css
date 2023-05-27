@@ -48,10 +48,15 @@ h1 {
 .item__nadpis {
     color: var(--wh);
     font-size: 22px;
+    font-weight: 600;
     margin: 0;
 }
 
 footer p {
+    font-size: 14px;
+}
+.Finfo__text {
+    color: var(--text);
     font-size: 14px;
 }
 .Finfo__title {

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/logo_menu.svg">
     <title>Kontakt | Dotek Pohody</title>
     <meta name="description" content="Máte-li jakékoli dotazy nebo chcete si rezervovat masáž, rádi vám pomůžeme. Naše kontaktní informace jsou zde, abyste se s námi mohli snadno spojit. Zavolejte nám, pošlete e-mail nebo se stavte na naší pobočce v Liberci.">
+    <link rel="icon" href="./img/logo_menu.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap**display=swap**" rel="stylesheet">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
     <link rel="preload" href="./img/mapa_DT.webp" as="image">
     <link rel="preload" href="./css/critical.css" as="style">
     <link rel="preload" href="./css/criticalKontakt.css" as="style">
@@ -23,11 +23,11 @@
     <header>
         <nav class="menu">
             <a class="menu_link" href="./index.html"><img class="menu__logo" src="./img/logo_menu.svg" alt="Logo"></a>
-            <ul class="menu__links">
+            <menu class="menu__links">
               <li class="menu_link"><a href="./index.html">Domů</a></li>
               <li class="menu_link"><a href="./Onas.html">O nás</a></li>
               <li class="menu_link"><a href="./kontakt.html">Kontakt</a></li>
-            </ul>
+            </menu>
         </nav>
     </header>
     <section>
@@ -47,9 +47,9 @@
             </div>
             <img class="kontakt__img img-responsive" src="./img/mapa_DT.webp" alt="Poloha Doteku Pohody na mapě">
             <div class="socky--kontakt">
-                <a class="socky__item" href="#"><img src="./img/Facebook_icon.svg" alt="ikona sociální sítě Facebook"></a>
-                <a class="socky__item" href="#"><img src="./img/Instagram_icon.svg" alt="ikona sociální sítě Instagram"></a>
-                <a class="socky__item" href="#"><img src="./img/LinkedIn_icon.svg" alt="ikona sociální sítě LinkedIn"></a>
+                <a class="socky__item socky__item--fb" href="#"><span class="socky__text">Facebook</span></a>
+                <a class="socky__item socky__item--ig" href="#"><span class="socky__text">Instagram</span></a>
+                <a class="socky__item socky__item--li" href="#"><span class="socky__text">LinkedIn</span></a>
             </div>
         </div>
         
@@ -60,8 +60,8 @@
             <div>
                 <p class="Finfo__title">Dotek Pohody s.r.o.</p>
                 <div>
-                    <p class="Finfo__text Finfo__text--mail">DotekPohody@gmail.com</p>
-                    <p class="Finfo__text Finfo__text--phone">+420 586 324 846</p>
+                    <a class="Finfo__text Finfo__text--mail" href="mailto:DotekPohody@gmail.com">DotekPohody@gmail.com</a>
+                    <a class="Finfo__text Finfo__text--phone" href="tel:+420586324846">+420 586 324 846</a>
                     <p class="Finfo__text Finfo__text--adres">Liberec, Dubská 52/1</p>
                 </div>
             </div>
@@ -74,7 +74,6 @@
                 </div>
             </div>
         </div>
-        <img class="footer__logo" src="./img/logo_footer.svg" alt="logo Dotek Pohody">
         <div class="footer__icons">
             <a class="menu_link" href="./index.html"><img src="./img/logo_menu.svg" alt="logo masáží v Liberci Dotek Pohody"></a>
             <div>
