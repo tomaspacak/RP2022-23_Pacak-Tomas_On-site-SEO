@@ -1,6 +1,6 @@
 :root {
     --text:#484848;
-    --primarC:#FF8541;
+    --primarC:#ff7225;
     --footerBg: #EEE3D8;
     --wh:rgb(255, 255, 255);
     --zamBg: rgba(255, 137, 70, 0.72);
@@ -163,7 +163,6 @@ figure {
 
 footer {
     background-color: var(--footerBg);
-    padding: 1em;
 }
 .Finfo {
     display: flex;

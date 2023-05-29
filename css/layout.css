@@ -28,6 +28,9 @@
 .Finfo {
     margin-bottom: 7em;
 }
+footer {
+    padding: 1em;
+}
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,6 +61,9 @@
     }
     .Finfo {
         margin-bottom: 2em;
+    }
+    footer {
+        padding: 1em 3em;
     }
 
     .kontakt {
